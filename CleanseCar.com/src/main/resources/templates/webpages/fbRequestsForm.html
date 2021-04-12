@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/jpg" th:href="@{/assets/images/favicon.png}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>CleanseCar</title>
+    <style>
+        .container{
+            min-width: 320px;
+            max-width: 480px;
+            width: 320px;
+            padding: 0px;
+            font-family: 'Montserrat';
+        }
+        .banner_img img{
+            width: 100%;
+            float: left;
+            height: 210px;
+        }
+        .row{
+            margin: 0;
+        }
+        
+        .cc_logo img{
+            width: 160px;
+            text-align: center;
+            float: left;
+          
+        }
+        .cc_logo{
+            margin-top: 10px;
+            margin-bottom: 17px;
+            float: left;
+            width: 100%;
+           box-shadow: 0 10px 6px -6px #dcdcdc;
+           
+        }
+        .vehicle_contene{
+        }
+        
+        .img_all{
+            width: 100%;
+            float: left;
+          text-align: center;
+            margin-top: 15px;
+            border-radius: 03px;
+           
+        }
+        .img_all img{
+            width: 225px;
+    padding: 05px;
+    border: 1px solid #e6e6e6;
+            
+        }
+        .offer_steps samp{
+            width: 100%;
+            float: left;
+            font-size: 11px;
+            padding-top: 05px;
+        }
+        .thankyou_msg{
+            width: 100%;
+            float: left;
+            font-weight: 600;
+            font-family:'Montserrat';
+            text-align: center;
+            margin-bottom: 15px;
+            color: #383097;
+        }
+        .thankyou_msg label{
+            width: 100%;
+            float: left;
+            font-family:'Montserrat';
+            font-size: 15px;
+        }
+         .thankyou_msg span{
+             font-weight: 700!important;
+             font-size: 15px;
+        }
+        
+        .service_images{
+           /* padding: 0px 15px;*/
+            margin-top: 10px;
+        }
+        .foo_cc{
+            background-color: #383097;
+            color: #fff;
+            padding: 8px 10px;
+            font-family:'Montserrat';
+            font-size: 12px;
+            text-align: center;
+        }
+        .foo_cc a{
+            color: #fff;
+            font-family:'Montserrat';
+            text-decoration: underline;
+        }
+        
+      
+        .submit{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            
+        }
+        .submit button{
+            border-radius: 04px;
+    background-color: #004a98;
+    color: #fff;
+    border-style: none;
+    padding: 06px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+     }
+.ondemand_label{
+            float: right;
+            font-family: 'Montserrat';
+        }
+        
+.field label {
+  color: #646567;
+  font-size: 1em;
+  font-weight: 500;
+  position: absolute;
+  top: 2em;
+  transition: all 0.1s linear;
+         font-family: 'Montserrat';
+}
+        .floating_filed label{
+             color: #646567;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  top: 0em ;
+  transition: all 0.1s linear;
+            font-family: 'Montserrat';
+        }
+        .floating_filed{
+            margin-top: 35px;
+            font-family: 'Montserrat';
+        }
+.floating-form {
+  width:320px;
+}
+
+/****  floating-Lable style start ****/
+.floating-label { 
+  position:relative; 
+  margin-bottom:20px; 
+}
+.floating-input , .floating-select {
+  font-size:14px;
+  padding:4px 0px;
+  display:block;
+  width:100%;
+  height:30px;
+  background-color: transparent;
+  border:none;
+  border-bottom:1px solid #b5bdce;
+}
+
+.floating-input:focus , .floating-select:focus {
+     outline:none;
+     border-bottom:1px solid #2088cd; 
+}
+
+
+        
+
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+  top:-18px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+.floating-select:focus ~ label , .floating-select:not([value=""]):valid ~ label {
+  top:-18px;
+  font-size:14px;
+  color:#2088cd;
+    text-transform: uppercase;
+}
+
+/* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+  width:50%;
+}
+
+
+
+.floating-textarea {
+   min-height: 30px;
+   max-height: 260px; 
+   overflow:hidden;
+  overflow-x: hidden; 
+}
+
+/* highlighter */
+.highlight {
+  position:absolute;
+  height:50%; 
+  width:100%; 
+  top:15%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* animation */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #b5bdce;
+    color: #666;
+    font-size: 1.2em;
+    padding: 1.6em 0em .2em;
+    width: 100%;
+}
+
+input:focus + label,
+input + label.show {
+  border-radius: 4px;
+    color: #2088cd;
+    font-size: 12px;
+    left: 0em;
+    padding: 0 .15em;
+    text-transform: uppercase;
+    top: 0.6em;
+}
+
+
+.field {
+  margin-bottom: 1.3em;
+  position: relative;
+    font-family: 'Montserrat';
+}
+
+
+input:focus {
+  border-color: #2088cd;
+  outline: 0;
+}
+        
+        .ondemand_label label{
+           margin-bottom: 15px;
+    padding: 12px 8px;
+    float: right;
+    width: 70%;
+    font-size: 14px;
+            color: #004a98;
+            font-family: 'Montserrat';
+            text-align: right;
+        }
+        .details_label{
+            margin: 15px 0px;
+            font-family: 'Montserrat';
+        }
+        .pop_img{
+            text-align: center;
+        }
+        .pop_img img{
+            width: 95px;
+        }
+        .modal-body label{
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-size: 17px;
+            font-family: 'Montserrat';
+            margin-bottom: 0px;
+        }
+        .modal-body span{
+            margin: 15px 8px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+    float: left;
+        }
+        .modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+        .modal-footer {
+    width: 100%;
+            
+            font-family: 'Montserrat';
+            border: none !important;
+        }
+        .btn-danger{
+            background-color: #004a98;
+            border-color: #004a98;
+        }
+        .modal-header{
+            padding: 09px;
+            background-color: #004a98;
+    color: #fff;
+        }
+       .modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.pure-material-textfield-outlined > input:visited, .pure-material-textfield-outlined > textarea:visited{
+    padding: 20px 20px 20px 20px;
+    line-height: 53px;
+        }
+        .invformError{
+        color:red;
+        }
+        
+        @media(min-width:320px) and (max-width:359px){
+            .banner_img img{
+               width: 100%; 
+            }
+            .field{
+                width: 300px;
+            }
+            .cc_logo img{
+                width: 130px;
+            }
+            .ondemand_label label {
+    margin-bottom: 15px;
+    padding: 6px 5px;
+    float: right;
+    width: 70%;
+    font-size: 14px;
+    color: #004a98;
+   }
+            .service_images{
+            padding: 0px 15px;
+            margin-top: 10px;
+        }
+            .input-group{
+                width: 100%;
+            }
+            .pure-material-textfield-outlined{
+                 width: 100%;
+            }
+            .pure-material-textfield-outlined input{
+                width: 100%;
+            }
+        }
+        @media(min-width:360px) and (max-width:479px){
+            .input-group{
+                width: 100%;
+            }
+            .banner_img img{
+               width: 100%; 
+            }
+            .pure-material-textfield-outlined{
+                 width: 100%;
+            }
+            .pure-material-textfield-outlined input{
+                width: 100%;
+            }
+        
+            .modal-body span {
+    margin: 15px 2px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    float: left;
+       }
+        }
+        @media(min-width:480px) and (max-width:639px){
+            
+            .ondemand_label{
+                width: 65%;
+                float: left;
+                padding-top: 10px;
+                font-family: 'Montserrat';
+                     }
+            .ondemand_label label{
+                font-size: 16px;
+            }
+            .modal-footer{
+                margin-top: 15px;
+            }
+            .service_images{
+            padding: 0px 15px;
+            margin-top: 10px;
+        }
+            .input-group{
+                width: 100%;
+            }
+            .pure-material-textfield-outlined{
+                 width: 100%;
+            }
+            .pure-material-textfield-outlined input{
+                width: 100%;
+            }
+            .modal-body span {
+    margin: 10px 8px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    width: 100%;
+    float: left;
+}
+            .modal-body{
+                padding: 15px;
+            }
+        }
+        @media(min-width:640px) and (max-width:768px){
+            .ondemand_label{
+                width: 50%;
+                
+                     }
+            .ondemand_label label{
+                font-size: 18px;
+            }
+        }
+
+/* Faster transition in Safari for less noticable fractional font-size issue */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .pure-material-textfield-outlined > input,
+        .pure-material-textfield-outlined > input + span,
+        .pure-material-textfield-outlined > textarea,
+        .pure-material-textfield-outlined > textarea + span,
+        .pure-material-textfield-outlined > input + span::before,
+        .pure-material-textfield-outlined > input + span::after,
+        .pure-material-textfield-outlined > textarea + span::before,
+        .pure-material-textfield-outlined > textarea + span::after {
+            transition-duration: 0.1s;
+        }
+    }
+}
+    </style>
+    </head>
+   
+    <body>
+        
+        <div class="row">
+            <div class="cc_logo">
+        <img th:src="@{/assets/images/C%20Logo-01.png}">
+                <div class="ondemand_label">
+             <label>ON-DEMAND SERVICES</label>
+             </div>
+        </div>
+            <div class="banner_img">
+             <img th:src="@{/assets/images/gallery_11.jpg}">
+             </div>
+        </div>
+    <div class="row">
+    <div class="container">
+    <div class="service_images">
+                
+    <label class="details_label">Please provide the details below:</label>
+    <div class="all_data">
+  <div class="container">
+ <!--  <form name="registration"> -->
+    <div class="field">
+      <input type="text" id="firstName" name="firstNameTextField" value="" 
+      maxlength="50" onblur="isEmptyfunction(this);">
+      <label for="firstName">Name</label>
+  		<small id="inv_firstName" class="invformError" style="display:none;">Please Provide Name</small>
+      <small id="inv_firstName_length" class="invformError" style="display:none;">Please Provide Valid Name</small>
+        </div>
+    <div class="field">
+      <input type="text" id="phoneNo" name="lastNameTextField"
+      maxlength="10" onblur="isEmptyfunction(this);"  onkeypress="return isNumber(event)">
+      <label for="lastName">Mobile Number</label>
+      <small id="inv_phoneNo" class="invformError" style="display:none;">Please Provide Mobile Number</small>
+      <small id="inv_phoneNo_length" class="invformError" style="display:none;">Please Provide Valid Mobile Number</small>
+    </div>
+    <div class="field">
+      <input type="text" id="emailId" name="emailTextField"
+      maxlength="60"  onblur="isEmptyfunction(this);">
+      <label for="email">Email</label>
+      <small id="inv_emailId" class="invformError" style="display:none;">Please Provide Email</small>
+      <small id="inv_emailId_valid" class="invformError" style="display:none;">Please Provide Valid Email</small>
+    </div>
+      <div class="field">
+      <input type="text" id="location" name="lastNameTextField"
+      maxlength="60" onblur="isEmptyfunction(this);">
+      <label for="lastName">Location</label>
+      <small id="inv_location" class="invformError" style="display:none;">Please Provide Location</small>
+      <small id="inv_location_length" class="invformError" style="display:none;">Please Provide Valid Location</small>
+    </div>
+       <div class="field floating_filed">
+      <div class="floating-label">  
+      <select id="selectPriority" class="floating-select" onclick="this.setAttribute('value', this.value);" value=""
+      onblur="isEmptyfunction(this);">
+        <option value=""></option>
+        <option value="Immediate">Immediate</option>
+        <option value="Today">Today</option>
+        <option value="Tomorrow">Tomorrow</option>
+      </select>
+      <span class="highlight"></span>
+      <label>Select</label>
+       <small id="inv_priority" class="invformError" style="display:none;">Please Select One Option</small>
+     
+    </div>
+      </div>
+       <div class="submit">
+            <button type="submit"   onclick="dataSubmitInfo();">SUBMIT</button>
+        </div>
+ <!--  </form> -->
+</div>
+                 
+            </div> 
+            </div>
+              
+            </div>
+             
+                 
+        
+        </div>
+  
+        <script>
+        
+        $(function () {
+  let show = 'show';
+  
+  $('input').on('checkval', function () {
+    let label = $(this).next('label');
+    if(this.value !== '') {
+      label.addClass(show);
+    } else {
+      label.removeClass(show);
+    }
+  }).on('keyup', function () {
+    $(this).trigger('checkval');
+  }); 
+});
+        </script>
+    
+    </body>
+    <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+       <!-- <div class="modal-header">
+          <h4 class="modal-title">Success</h4>
+       
+        </div>-->
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="padding:0px 15px 08px 15px;">
+            <div class="pop_img">
+           <img th:src="@{/assets/images/green.jpg}">
+                </div>
+         <label>Thank you for your interest</label>
+            <span>Our Customer Support team will reach you shortly.</span>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="pageRefresh();">OK</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <script>
+  
+  
+  
+  function isNumber(evt) {
+	    evt = (evt) ? evt : window.event;
+	    var charCode = (evt.which) ? evt.which : evt.keyCode;
+	    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+	        return false;
+	    }
+	    return true;
+	}
+  
+  function isEmptyfunction(element){
+		var id=element.id;
+			
+		$('#inv_firstName').hide();
+		$('#inv_firstName_length').hide();
+		$('#inv_phoneNo').hide();
+		$('#inv_phoneNo_length').hide();
+		$('#inv_emailId').hide();
+		$('#inv_emailId_valid').hide();
+		$('#inv_location').hide();
+		$('#inv_location_length').hide();
+		$('#inv_priority').hide();
+		    							
+	}
+  
+  
+  
+  
+  var requestData = '';
+  
+  function dataSubmitInfo(){
+  	
+	  alert("Hllo");
+	  
+  	var isErrorfound = false;
+  	
+  		
+  	var fName = $('#firstName').val();
+  	var mobileNo = $('#phoneNo').val();
+  	var emailID = $('#emailId').val();
+  	var location = $('#location').val();
+  	var priority = $( '#selectPriority option:selected').text();
+  	
+     	if(fName == ''){
+     		$('#inv_firstName').show();
+  			isErrorfound == true;
+  		}else if(fName.length < '3'){
+  			$('#inv_firstName_length').show();
+  			isErrorfound == true;
+  		}
+  	
+  		if(mobileNo == '' ){
+  			$('#inv_phoneNo').show();
+	        isErrorfound == true;
+        }else if((mobileNo.length < '10') || (mobileNo.length > '10')){
+      		$('#inv_phoneNo_length').show();
+	      isErrorfound == true;
+        }
+  	
+  	
+  		var valid="/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i";
+  	
+      		if(emailID == '' ){      			
+      			$('#inv_emailId').show();
+      			isErrorfound == true;
+      		}else if(!emailID.match(valid)){
+     	 		$('#inv_emailId_valid').show();
+      	 		isErrorfound == true;
+      		}
+  	
+  	
+      		if(location == ''){
+     	 		$('#inv_location').show();
+     	    	isErrorfound == true;
+      		}else if(location.length < '3'){
+      			$('#inv_location_length').show();
+	        	isErrorfound == true;
+      		}
+      
+      		if(priority == ''){
+      			$('#inv_priority').show();
+	      		isErrorfound == true;
+      		}
+      
+      
+      
+      		if(isErrorfound == true){
+      			return false;
+      		}else{
+      	
+      				requestData={
+				      			"custName":fName, "phoneNo":mobileNo, "emailId":emailID, "location":location, 
+				   		        "priority":priority
+      				}
+      	
+       	
+      	
+     	
+      				$.ajax({	
+				      		type : "POST",
+				      	    contentType : "application/json",
+							    url: "/saveRequestform",
+							    dataType:"json",
+							    data: JSON.stringify(requestData),
+							    processData:false,
+							    success: function (response)
+							    {
+							         if(response) { 
+							        	 getsaveInfoResponse(response);
+							         } else { 
+							       	  console.log("Please check in the Response");
+							         }
+							    }
+			 		});
+      	
+      		}
+      	
+      }
+  
+  
+  
+		  function getsaveInfoResponse(response){
+		  	if(response.responseType == '200'){
+				response=response.response;
+					
+		  	}
+		  }
+		  
+		  	function pageRefresh(){
+		    	location.reload();
+		    }
+  
+  
+  
+  
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>

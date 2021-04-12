@@ -1,0 +1,757 @@
+@media(min-width:320px) and (max-width:479px){  
+    
+    .header-full-area .container-fluid {
+    padding: 0 10px 0px 10px;
+    }
+   .fixed {
+       float: left;
+    }
+    .logo {
+    padding: 10px 0 0px;
+    }
+    .promise_data {
+    padding: 0px 60px;
+    width: 750px;
+    height: 365px;
+}
+    .about-light-area {
+    padding: 0px;
+}
+    .promise_data {
+    padding: 0px 0px !important;
+    width: 332px !important;
+    height: 270px !important;
+}
+    .animation-element.slide-left.testimonial:nth-of-type(even) {
+    width: 100%;
+    margin: 23% 0% 3.0% 1.5%;
+        padding-left: 0px !important;
+}
+    .new_service {
+   
+    width: 100% !important;
+}
+    .tabs nav ul li{
+        padding-right: 10px;
+    }
+    .list_right{
+        float: none !important;
+    }
+    .footer_support{
+        padding: 0px 15px !important;
+    }
+    .banner-content h1{
+        font-size: 17px !important;
+    line-height: 2 !important;
+    }
+    .banner-content label {
+    font-size: 29px;
+}
+    .modal_content {
+    width: 100%;
+    float: left;
+    padding: 0px 8px 20px 12px;
+    color: #FFF;
+}
+    .modal_content p {
+    width: 100%;
+}
+    .modal_img {
+   display: none;
+}
+    .mean-container .mean-nav ul li{
+    background-color: #f6f6f6;
+}
+    .slick-slide .feature-image {
+    background: none;
+}
+    .about-light-area .about-title {
+    padding-left: 0px !important;
+}
+    .about_footer {
+    width: 100%;
+    margin-top: 15px;
+}
+    .help_info{
+        margin-top: 10px;
+    }
+    .payment-img {
+    width: 100%;
+    float: left;
+}
+    .terms_info li {
+   margin-bottom: 10px;
+}
+    .type_rotate {
+    font-size: 19px;
+    }
+    .mob_num input {
+    width: 50%;
+    }
+    .enter_num span{
+        width: 100%;
+    }
+    .mean-container a.meanmenu-reveal {
+    margin-top: -47px !important;
+}
+}
+@media(min-width:360px) and (max-width:580px){ 
+    .fb_data{
+        margin-bottom: 15px;
+        padding-left: 15px !important;
+    }
+    .LI-badge-container.horizontal.light {
+    width: 329px !important;
+    height: 297px;
+}
+    #document .pluginSkinLight pluginFontHelvetica ._5pcb _5tmf _50f3{
+        width: 330px !important;
+    }
+    .banner-content .text-content-wrapper {
+    
+    margin-top: 100px !important;
+}
+    .mob_num span {
+    width: 50%;
+    }
+    .mob_body {
+    padding: 20px 0px 60px 0px !important;
+}
+    .about-light-area .about-title{
+        padding-left: 0px !important;
+    }
+    .maps_cc{
+        width: 100%;
+        float: left;
+        margin-left: 0px !important;
+    }
+    .content-wrap img {
+    width: 100%;
+    height: 230px;
+}
+    .maps_flips{
+        width: 100%;
+    }
+    .modal_content{
+        width: 100%;
+        float: left;
+        padding: 0px 0px 0px 06px;;
+    }
+    .terms_info li{
+        margin-bottom: 10px;
+    }
+    .about_footer {
+   
+    width: 100%;
+    
+    margin-top: 15px;
+}
+    .payment-img{
+        width: 100%;
+        float: left;
+    }
+    .slick-slide .feature-image {
+    background: none;
+}
+    .modal_content p {
+    width: 100%;
+    
+}
+    .modal_img{
+        display: none;
+    }
+    .mean-container .mean-nav ul li{
+    background-color: #f6f6f6;
+}
+    .banner-content label {
+    
+    font-size: 30px;
+    }
+    .type_rotate {
+   font-size: 20px;
+    margin-left: 9px;
+}
+    .mean-container a.meanmenu-reveal{
+        width: 21px;
+        margin-top: -42px;
+    }
+    
+    .enter_num span {
+    width: 100% !important;
+}
+
+@media(min-width:480px) and (max-width:639px){  
+     .header-full-area .container-fluid {
+    padding: 0 10px 0px 10px;
+    }
+   .fixed {
+       float: left;
+    }
+    .logo {
+    padding: 10px 0 0px;
+    }
+    .list_right{
+        float: none !important;
+    }
+    .promise_data {
+    padding: 0px 0px !important;
+    width: 460px !important;
+    height: 365px !important;
+}
+    .about-light-area {
+    padding: 0px 0px !important;
+}
+    .mobile_screen img {
+    width: 380px !important;
+    height: 320px;
+}
+     .animation-element.slide-left.testimonial:nth-of-type(even) {
+    width: 100%;
+    margin: 23% 0% 3.0% 1.5%;
+        padding-left: 0px !important;
+}
+    .new_service {
+    padding: 0px;
+    width: 100% !important;
+}
+    .tabs nav ul li{
+        padding-right: 10px !important;
+    }
+    .footer_support{
+        padding: 0px 15px !important;
+    }
+      .banner-content h1{
+    line-height: 1.5 !important;
+    }
+    .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    margin-left: 0px !important;
+}
+    .search_width{
+        margin-left: 65px;
+        width: 55% !important;
+    }
+    .terms_info .footer_info {
+    padding-left: 22px;
+}
+}
+@media(min-width:640px) and (max-width:767px){
+    
+    .banner-content .text-content-wrapper {
+    
+    margin-top: 100px !important;
+}
+    .maps_cc{
+        width: 100%;
+        float: left;
+        margin-left: 0px !important;
+    }
+    .content-wrap img {
+    width: 100%;
+    height: 230px;
+}
+    .maps_flips{
+        width: 100%;
+    }
+    .about_footer {
+    float: left;
+    width: 60%;
+    }
+    .f-info{
+        width: 50%;
+        float: left;
+    }
+    .payment-img{
+         width: 100%;
+    float: left;
+    margin-top: 15px;
+    }
+    .slick-slide .feature-image {
+    background: none;
+}
+   .modal_content p {
+    width: 100%;
+}
+    .modal_content {
+    width: 70%;
+        padding: 0px 0px 20px 9px;
+}
+    .modal_img {
+    width: 30%;
+   
+}
+    .modal_cc {
+    margin-top: 16px;
+}
+    .modal_logo img {
+    width: 157px;
+    margin-left: 15px;
+}
+
+
+    .slick-slide .feature-image {
+    background: none !important;
+}
+    
+}
+
+@media(min-width:640px) and (max-width:768px){
+    .list_right{
+       float: right;
+    margin-top: 56px;
+    }
+   
+    .logo_left{
+        float: left;
+    }
+    .promise_data {
+    padding: 0px 0px !important;
+    width: 612px !important;
+    height: 365px !important;
+}
+     .animation-element.slide-left.testimonial:nth-of-type(even) {
+    width: 100%;
+    margin: 23% 0% 3.0% 1.5%;
+        padding-left: 0px !important;
+}
+    .new_service {
+    padding: 0px;
+    width: 100% !important;
+}
+    .about-light-area .about-image {
+  
+    width: 100% !important;
+   
+}
+    .tabs nav ul li{
+        padding-right:07px;
+    } 
+    .footer_support{
+        padding: 0px 16px !important;
+    }
+    
+     .mean-container .mean-nav {
+    position: relative !important;
+}
+    .mean-container .mean-nav ul li {
+    background-color: #f6f6f6;
+}
+}
+@media(min-width:768px) and (max-width:1024px){
+    .about-light-area {
+    padding: 0px!important; 
+}
+     .about-light-area .about-image {
+  
+    width: 100% !important;
+         float: left !important;
+         position: relative;
+         text-align: center;
+            
+}
+    
+         .promise_data{
+    padding: 0px 0px 0px 30px!important;
+    width: 750px!important;
+    height: 365px!important;
+}
+    .about-light-area .about-title {
+    padding-left: 0px !important;
+    margin-top: 15px !important;
+}
+    .section-title > p, .section-title-light > p{
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 2;
+    }
+    .maps_cc{
+        width: 100%;
+        float: left;
+        margin-left: 0px !important;
+    }
+    
+    .maps_flips{
+        width: 100%;
+    }
+    .maps_cc li {
+    padding: 0px 20px 20px 35px !important;
+    }
+    .about_footer {
+    width: 70%;
+}
+    .help_info{
+      width: 100%;
+        float: left;
+    }
+    .foo_width{
+        width: 100%;
+        float: left;
+    }
+    .mean-nav {
+    position: relative;
+         background-color: #f6f6f6 !important;
+}
+    .mobile_screen{
+        float: left;
+        padding: 0px;
+    }
+    .screen_usage {
+    float: left;
+    width: 45%;
+}
+    .one_app{
+        width: 100%;
+        float: left;
+        padding: 0px;
+        margin-bottom: 25px;
+    }
+    .animation-element.slide-left.testimonial:nth-of-type(even) {
+    width: 50.5% !important;
+    margin: 0% 0% 3.0% 1.5% !important;
+}
+}
+    
+    @media (max-width: 1169px) and (min-width: 992px){
+.main-menu ul li {
+    margin-right: 7px !important;
+    margin-left: 6px !important;
+}
+        .list_right {
+    float: right;
+    padding: 0px;
+}
+    
+    .about-light-area .about-image {
+  
+    width: 100% !important;
+        float: left !important;
+}
+.mean-container a.meanmenu-reveal {
+    margin-top: -30px;
+}
+}
+
+    
+     @media (max-width: 1024px) and (min-width: 800px){
+         
+      /*  
+       .car_services {
+    padding: 17px 10px 20px !important;
+   
+} 
+         */
+}
+
+ @media (max-width: 1152px) and (min-width: 800px){
+     
+     .maps_cc{
+         width: 100%;
+     }
+     .maps_flips{
+         width: 100%;
+         float: left;
+     }
+     
+}
+
+@media (max-width: 1024px) and (min-width: 800px){
+    .resposive_title{
+       width: 50% !important;
+        float: left !important;
+    }
+    .about-light-area .about-title {
+    padding-left: 0px !important;
+}
+    .maps_cc li {
+    padding: 0px 20px 20px 57px !important;
+}
+}
+    
+@media (max-width:1152px) and (min-width:800px){
+    .promise_data {
+    padding: 0px 57px 0px 97px !important;
+        width: 715px !important;
+    height: 340px !important;
+    }
+    .banner-content label {
+    
+    line-height: 66px;
+}
+}
+         
+    
+
+ @media (max-width: 1024px) and (min-width: 960px){
+         
+      .promise_data {
+    padding: 0px 0px 0px 30px!important;
+    width: 960px!important;
+    height: 365px!important;
+}
+              .mobile_screen{
+                  float: left;
+              }
+              .one_app{
+                  width:100%;
+                  float: left;
+                  margin-bottom: 15px;
+              }
+              .screen_usage{
+                  float: left;
+                  width: 40%;
+              }
+              .responsive_usage{
+                  padding-left: 100px;
+              }
+              .footer_support{
+                  padding-left: 17px !important;
+              }
+              .header-full-area .container-fluid {
+    padding: 0 15px;
+    width: 933px !important;
+                  
+}
+              .banner-content .text-content {
+    padding-left: 27px ;
+}
+              .banner-content .text-content-wrapper {
+    
+    margin-top: 350px;
+}
+     .mean-container .mean-nav ul{
+         left: 0;
+     }
+     .mean-container .mean-nav {
+    margin-top: 0;
+    position: relative;
+         background-color: #f6f6f6;
+}
+     .about_responsive{
+         float: left;
+         width: 50%;
+     }
+     .modal_content p {
+    width: 100%;
+   
+}
+     .modal_content {
+    width: 70%;
+    padding: 0px 0px 20px 9px;
+}
+     .modal_img {
+    width: 30%;
+}
+     .modal_logo img {
+    width: 165px;
+    margin-left: 12px;
+}
+     .modal_cc {
+    margin-top: 30px;
+}
+     .service_responsive{
+        padding: 17px 15px 43px 15px;
+     }
+     .car_proper {
+    padding: 17px 15px 67px;
+}
+     .car_responsive{
+         padding: 30px 5px;
+     }
+     .responsive_data{
+         padding: 18px 5px;
+     }
+}
+
+
+/* Carrers Page */
+
+
+@media(min-width:480px) and (max-width:639px){  
+   .carrer_list span {
+    height: 60px !important;
+} 
+    .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+    ul.sub_categories li {
+    list-style: none;
+    width: 32.5%;
+    }
+    .dept {
+    width: 311px;
+}
+}
+
+@media(min-width:640px) and (max-width:767px){
+    .carrer_list span {
+    height: 60px !important;
+} 
+    .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .banner-content label {
+    
+    font-size: 42px;
+    }
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+    ul.sub_categories li {
+    list-style: none;
+    width: 32.5%;
+    }
+    .dept {
+    width: 333px;
+}
+    .mean-nav {
+    
+         background-color: #f6f6f6 !important;
+    
+}
+
+/*
+@media(min-width:768px) and (max-width:1024px){
+    
+    .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+   ul.sub_categories li {
+    list-style: none;
+    width: 33%;
+}
+    .dept {
+    width: 333px;
+}  
+}
+
+
+@media(min-width:800px) and (max-width:1152px){
+   .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+   ul.sub_categories li {
+    list-style: none;
+    width: 33%;
+}
+    .dept {
+    width: 333px;
+}   
+    
+    
+}
+
+
+
+@media(min-width:800px) and (max-width:1280px){
+    .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+   ul.sub_categories li {
+    list-style: none;
+    width: 33%;
+}
+    .dept {
+    width: 333px;
+}   
+    
+    
+    
+}
+
+
+
+@media(min-width:800px) and (max-width:1280px){
+    
+    .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+   ul.sub_categories li {
+    list-style: none;
+    width: 33%;
+}
+    .dept {
+    width: 333px;
+}   
+    
+}
+@media(min-width:800px) and (max-width:1440px){
+    
+    .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+   ul.sub_categories li {
+    list-style: none;
+    width: 33%;
+}
+    .dept {
+    width: 333px;
+}   
+    
+}
+@media(min-width:800px) and (max-width:1920px){
+    
+    .sub_categories {
+    width: 100%;
+    float: left;
+    margin: 30px auto;
+    padding: 0px 0px 0px 10px !important;
+}
+    .To_apply {
+   
+    padding: 0px 12px;
+}
+   ul.sub_categories li {
+    list-style: none;
+    width: 33%;
+}
+    .dept {
+    width: 333px;
+}   
+    
+}
+*/

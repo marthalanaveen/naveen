@@ -1,0 +1,1109 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CleanseCar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon Icon -->
+        <link rel="shortcut icon" type="image/jpg" th:href="@{/assets/images/favicon.png}"/>
+        <!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+		<!-- All css here -->
+   
+        <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/font-awesome.min.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/meanmenu.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/animate.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/owl.carousel.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/slick.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/linear-icons.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/stroke-gan-icon.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/shortcode/shortcodes.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/responsive.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/custom_style1.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/custom_style.css}"/>
+        <link rel="stylesheet" th:href="@{/assets/css/responsive1.css}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+        <script th:src="@{/assets/js/vendor/modernizr-2.8.3.min.js}"></script>
+        
+        <script th:src="@{/assets/js/modernizr.custom.js}"></script>
+    </head>
+    <style>
+        
+.demo_open i.fa {
+  cursor: pointer;
+  margin-left: 8px;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+        .open-button {
+  background-color: #383097;
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 290px;
+
+           
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+        
+        
+        
+        .promise_data{
+            padding: 0px 60px;
+            width:750px;
+            height: 320px;
+        }
+        .about-light-area .about-title {
+    padding-bottom: 30px !important;
+    padding-left: 52px;
+}
+       
+.maps_in .bg-color {
+  background-color: #46a1de;
+  transition-duration: .5s;
+}
+
+.maps_in .text-color {
+  color: #46a1de;
+  transition-duration: .5s;
+}
+
+.maps_in footer {
+  padding: 40px 0;
+  text-align: center;
+  opacity: .33;
+  color: white;
+}
+
+.wrapper {
+  
+  margin: 0 auto;
+}   
+    </style>
+    <body>
+       
+        
+		<!-- Header Full Area Start -->
+        
+		<header class="header-full-area fixed">
+            <div class="header-top hidden-xs" style="display:none;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <div class="header-top-left">
+                                <span>Ordered before 17:30, shipped today - Support: (012) 800 456 789</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-5">
+                            <div class="social-links">
+                                <a href="https://twitter.com/devitemsllc"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/devitems/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.rss.com/"><i class="fa fa-rss"></i></a>
+                                <a href="https://dribbble.com/devitemsllc"><i class="fa fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom header-sticky">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 logo_left">
+                            <div class="logo sticky_logo">
+                                <a th:href="@{/index}"><img th:src="@{/assets/images/cc_images/C%20Logo-01.png}" alt="CleanseCar" /></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 list_right" >
+                            <div class="main-menu mean-menu">
+                                <nav>
+                                    <ul class="header_menu">
+                                        <li><a href="#about">About Us</a></li>
+                                        <li><a href="#package">Packages</a>
+                                            
+                                        </li>
+                                        <li><a href="#upcoming">Doorstep Services</a></li>
+                                        
+                                        <li><a href="#footer_down">contact us</a></li>
+                                        <li><a href="#">Careers<span class="career_up"><blink>Coming 
+                                            Soon</blink></span></a></li>
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="mobile-menu hidden-lg hidden-md"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            
+		</header>
+        
+		<!-- Header Full Area End -->
+        
+        
+        
+		<!-- Slider Three Area Start -->
+		<div class="slider-three-area">
+		    <div class="slider-wrapper">
+		        <div  data-dot="01" class="single-slide" style="background-image: url('assets/images/banner/Home_Screen_V1-01.jpg');">
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12" style="margin-left:0px;width:60%;">
+                                    <div class="text-content-wrapper text-left">
+                                        <div class="text-content">
+                                            <label><small>Great services</small> Guaranteed</label>
+                                           
+                                            
+                                            <h6 class="type_rotate">
+  <span
+     class="txt-rotate"
+     data-period="500"
+     data-rotate='[ "Transparent Pricing","Doorstep Service" , "Trained Professionals" ]'></span>
+</h6>
+                                            
+                                            
+                                            <button class="start_cc" data-toggle="modal" data-target="#myModal">Download App</button>
+                                                                                            
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+		        </div>
+      
+		    </div>
+		</div>
+		<!-- Slider Three Area End -->
+        
+        
+        
+       
+        
+        
+         <!-- Timeline Three Area Start -->
+        <div class="timeline-three-area pt-50">
+            <div class="container">
+                <div class="section-title-light pb-60 text-center fix">
+                    <h2>Most hassle-free auto care services</h2>
+                    
+                    <p><b>Yes!</b> Regular servicing of your car can be done right in your doorstep. Our services are extremely convenient and just an app away.</p>
+                </div>
+                <div class="timeline-container">
+                    
+                     <div class="col-md-12 one_app">
+            
+            <div class="col-md-6 mobile_screen animation-element slide-left testimonial" >
+                
+                <img th:src="@{/assets/images/mobile/Model_01.png}">
+                
+                
+                </div>
+                <div class="col-md-5 screen_usage responsive_usage">
+                <div class="usage_content">
+                    <h3>Subscribe to daily car wash</h3>
+                    <p>Easy and flexible packages suiting to all your needs. Daily service, Alternate Day Service, Weekend service and many options available.
+
+                        </p>
+                    <a class="start_btn" data-toggle="modal" data-target="#myModal"><button>Download App</button></a>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            <div class="col-md-12 one_app pt-100">
+            
+           
+                <div class="col-md-5 screen_usage">
+                <div class="usage_content">
+                    <h3>Doorstep car care services</h3>
+                    <p>One click Doorstep service for all car care needs. Engine Wash, Fender Wash, Puncture service, Wheel rotation and many more services at your door step.
+                        </p>
+                     <a class="start_btn" data-toggle="modal" data-target="#myModal"><button>Download App</button></a>
+                    </div>
+                </div>
+             <div class="col-md-6 mobile_screen animation-element slide-left testimonial pl-100">
+                
+                <img th:src="@{/assets/images/mobile/Model_03.png}">
+                
+                
+                </div>
+            </div>
+            <div class="col-md-12 one_app pt-100">
+            
+            <div class="col-md-6 mobile_screen animation-element slide-left testimonial">
+                
+                <img th:src="@{/assets/images/mobile/Model_02.png}">
+                </div>
+                <div class="col-md-5 screen_usage responsive_usage">
+                <div class="usage_content">
+                    <h3>1 hour service guarantee</h3>
+                    <p>Revolutionizing door step car maintenance in India. <br>We guarantee  1 hr car maintenance serice. Transparant. Reliable. Convenient.
+                        </p>
+                     <a class="start_btn" data-toggle="modal" data-target="#myModal"><button>Download App</button></a>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 one_app pt-100 pb-40">
+            
+           
+                <div class="col-md-5 screen_usage">
+                <div class="usage_content">
+                    <h3>One App for all car needs</h3>
+                    <p>Do you have a car? You definitely need Cleansecar app for all your car needs in one App. Available in IOS App Store and Google Play Store. Download Now.
+                        </p>
+                     <a class="start_btn" data-toggle="modal" data-target="#myModal"><button>Download App</button></a>
+                    </div>
+                </div>
+             <div class="col-md-6 mobile_screen animation-element slide-left testimonial pl-100">
+                
+                <img th:src="@{/assets/images/mobile/Model_04.png}">
+                
+                
+                </div>
+            </div>
+            
+                 
+                </div>
+            </div>
+        </div>
+        <!-- Timeline Three Area End -->
+        
+        
+        
+        
+        
+          <!-- Feature Products Area Start -->
+        <div class="feature-product-area bg-1 ptb-60" id="package">
+            <div class="container">
+                <div class="section-title pb-30 text-center">
+                    <h2 class="pack_title">Packages</h2>
+                </div>
+                <div class="row">
+                    <div class="feature-slick-carousel">
+                        
+                       
+                        <div class="col-md-4 demo_index">
+                            <div class="single-feature-item gallery_img">
+                                <div class="feature-image">
+                                    <a href="#"><img th:src="@{/assets/images/cc_images/packages/sedan.jpg}" alt=""></a>
+                                </div>
+                                <div class="feature-wrapper">
+                                    <div class="feature-text">
+                                        <h5><a href="#">SEDAN</a></h5>
+                                    </div>
+                                    <div class="feature-info">
+                                        <span>Wet and Dry Cloth Wash</span> 
+                                        <span>External Shampoo Wash</span>
+                                        <span>Tyre / Rim Dressing</span>
+                                        <span>Interior Vacuum Cleaning</span>
+                                        <span>Dashboard & Console Clean</span>
+                                    </div>
+                                    <div class="feature-price">
+                                        <span class="discount" ><i class="fa fa-inr" aria-hidden="true"></i> 599</span>
+                                        <label class="day_wash">26 External Wash</label>
+                                        <label class="day_wash two_days">2 Interior Cleaning [with Vacuum Cleaner]</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 demo_index">
+                            <div class="single-feature-item gallery_img ">
+                                <div class="feature-image">
+                                    <a href="#"><img th:src="@{/assets/images/cc_images/packages/Package_V1-03.jpg}" alt=""></a>
+                                </div>
+                                <div class="feature-wrapper">
+                                    <div class="feature-text">
+                                        <h5><a href="#">SUV / MUV / LUV</a></h5>
+                                    </div>
+                                    <div class="feature-info">
+                                        <span>Wet and Dry Cloth Wash</span> 
+                                        <span>External Shampoo Wash</span>
+                                        <span>Tyre / Rim Dressing</span>
+                                        <span>Interior Vacuum Cleaning</span>
+                                        <span>Dashboard & Console Clean</span>
+                                    </div>
+                                    <div class="feature-price">
+                                        <span class="discount" ><i class="fa fa-inr" aria-hidden="true"></i> 749</span>
+                                        <label class="day_wash">26 External Wash</label>
+                                        <label class="day_wash two_days">2 Interior Cleaning [with Vacuum Cleaner]</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 demo_index">
+                            <div class="single-feature-item gallery_img">
+                                <div class="feature-image">
+                                    <a href="#"><img th:src="@{/assets/images/cc_images/packages/bike.jpg}" alt=""></a>
+                                </div>
+                                <div class="feature-wrapper">
+                                    <div class="feature-text">
+                                        <h5><a href="#">BIKE</a></h5>
+                                        
+                                    </div>
+                                    <div class="feature-info">
+                                        <span>Wet and Dry Cloth Wash</span> 
+                                        <span>External Shampoo Wash</span>
+                                       
+                                    </div>
+                                    <div class="feature-price">
+                                        <span class="discount" ><i class="fa fa-inr" aria-hidden="true"></i> 249</span>
+                                        <label class="day_wash">26 Days Wet & Dry Cloth</label>
+                                        <label class="day_wash two_days">2 Water Wash</label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 demo_index">
+                            <div class="single-feature-item gallery_img">
+                                <div class="feature-image">
+                                    <a href="#"><img th:src="@{/assets/images/cc_images/packages/hatchback.jpg}" alt=""></a>
+                                </div>
+                                <div class="feature-wrapper">
+                                    <div class="feature-text">
+                                        <h5><a href="#">HATCHBACK</a></h5>
+                                       
+                                    </div>
+                                    <div class="feature-info">
+                                        <span>Wet and Dry Cloth Wash</span> 
+                                        <span>External Shampoo Wash</span>
+                                        <span>Tyre / Rim Dressing</span>
+                                        <span>Interior Vacuum Cleaning</span>
+                                        <span>Dashboard & Console Clean</span>
+                                    </div>
+                                    <div class="feature-price">
+                                        <span class="discount" ><i class="fa fa-inr" aria-hidden="true"></i> 499</span>
+                                        <label class="day_wash">26 External Wash</label>
+                                        <label class="day_wash two_days">2 Interior Cleaning [with Vacuum Cleaner]</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+         <!-- Latest Products Area Start -->
+        <div class="latest-product-area pt-40 pb-60 bg-2">
+            <div class="container">
+                <div class="section-title-light pb-40 text-center">
+                    <h2>AMAZING COMBO's</h2>
+                   
+                </div>
+                <div class="row">
+                    <div class="grid">
+                        <div class="col-md-6 col-sm-6 grid-item col-xs-12">
+                            <div class="latest-item">
+                                <a href="#">
+                                    <img th:src="@{/assets/images/cc_images/new_combos/Combo_V1-07.jpg}" alt="">
+                                    <label class="combo_title">COMBO 1</label>
+                                    <span class="latest-p-title">
+                                        <span class="p-title-1">1 Car + 1 Bike <small>[ <i class="fa fa-inr" aria-hidden="true"></i>748 - <i class="fa fa-inr" aria-hidden="true"></i>998 ]</small></span>
+                                       
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 grid-item col-xs-12">
+                            <div class="latest-item">
+                                <a href="#">
+                                    <img th:src="@{/assets/images/cc_images/new_combos/Combo_V1-11.jpg}" alt="">
+                                     <label class="combo_title">COMBO 2</label>
+                                    <span class="latest-p-title">
+                                        <span class="p-title-1">1 car + 2 Bike's <small>[ <i class="fa fa-inr" aria-hidden="true"></i>997 - <i class="fa fa-inr" aria-hidden="true"></i>1247 ]</small></span>
+                                       
+                                    </span>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 grid-item col-xs-12">
+                            <div class="latest-item">
+                                <a href="#">
+                                    <img th:src="@{/assets/images/cc_images/new_combos/Combo_V1-08.jpg}" alt="">
+                                     <label class="combo_title">COMBO 3</label>
+                                    <span class="latest-p-title">
+                                        <span class="p-title-1">2 car's <small>[ <i class="fa fa-inr" aria-hidden="true"></i>998 - <i class="fa fa-inr" aria-hidden="true"></i>1498 ]</small></span>
+                                       
+                                    </span>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 grid-item col-xs-12">
+                            <div class="latest-item">
+                                <a href="#">
+                                    <img th:src="@{/assets/images/cc_images/new_combos/Combo_V1-09.jpg}" alt="">
+                                     <label class="combo_title">COMBO 4</label>
+                                    <span class="latest-p-title">
+                                        <span class="p-title-1">2 car's + 1 Bike <small>[ <i class="fa fa-inr" aria-hidden="true"></i>1247 - <i class="fa fa-inr" aria-hidden="true"></i>1747 ]</small></span>
+                                       
+                                    </span>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 grid-item col-xs-12">
+                            <div class="latest-item">
+                                <a href="#">
+                                    <img th:src="@{/assets/images/cc_images/new_combos/Combo_V1-10.jpg}" alt="">
+                                     <label class="combo_title">COMBO 5</label>
+                                    <span class="latest-p-title">
+                                        <span class="p-title-1">2 Car's + 2 Bike's <small>[ <i class="fa fa-inr" aria-hidden="true"></i>1496 - <i class="fa fa-inr" aria-hidden="true"></i>1996 ]</small></span>
+                                       
+                                    </span>
+                                   
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 grid-item col-xs-12">
+                            <div class="latest-item">
+                                <a href="#">
+                                    <img th:src="@{/assets/images/cc_images/new_combos/Combo_V1-12.jpg}" alt="">
+                                     <label class="combo_title">COMBO 6</label>
+                                    <span class="latest-p-title">
+                                        <span class="p-title-1">Alternate Day Services / Weekend Services / Ondemand Services </span>
+                                       
+                                    </span>
+                                    <div class="latest-p-title">
+                                        <span class="p-title-1">Alternate Day Services / Weekend Services / Ondemand Services</span>
+                                        <span class="p-number"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Latest Products Area End -->
+        
+        
+        <!-- Service Three Area Start -->
+        <div class="service-three-area ptb-60 bg-6" id="upcoming">
+            <div class="container text-center">
+                <div class="section-title-light pb-40">
+                    <h2 class="upcoming_serv">DOORSTEP SERVICES </h2>
+                </div>
+                <div class="bg-white upcoming_white">
+                    <div class="row custom">
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services service_responsive">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Deep%20Wash.png}" alt=""></span>
+                                <h5>Deep Cleaning</h5>
+                                <span class="divider"></span>
+                                <p>Wash your car with the right suds. Even though liquid dish soap is a great degreaser. Yes, it removes dirt, grease and old wax.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services car_proper responsive_car">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Wax%20and%20Polish.png}" alt=""></span>
+                                <h5>Wax and shine</h5>
+                                <span class="divider"></span>
+                                <p>Once the car is properly polished and is shining, apply a thin coat of wax on the surface of the car.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services car_proper responsive_car ">
+                                <span class="added_services" ><img th:src="@{/assets/images/cc_images/upcoming-services/Tyre%20Puncher.png}" alt=""></span>
+                                <h5>Tyre Puncher</h5>
+                                <span class="divider"></span>
+                                <p>No more hassle of running around to find a best flat tyre fixing service on those emergency days. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services service_responsive">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Tyre%20Rotation.png}" alt=""></span>
+                                <h5>Tyre rotation</h5>
+                                <span class="divider"></span>
+                                <p>Tyre rotation refers to the timely shifting of a car's wheels and tyres'position to ensure uniform tread wear and longer tread life.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Engine%20Wash.png}" alt=""></span>
+                                <h5>Engine Wash</h5>
+                                <span class="divider"></span>
+                                <p>Our engine detailing service can help make your engine sparkle again. We first use a professional grade degreaser to remove any oil</p>
+                            </div>
+                        </div>
+                          <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services car_responsive">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Seat.png}" alt=""></span>
+                                <h5>Leather Seat Polish</h5>
+                                <span class="divider"></span>
+                                <p>Leather seats add a touch luxe to your car. Get it done with no extra effort.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services fender_responsive">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Fender%20Wash.png}" alt=""></span>
+                                <h5>Fender Wash</h5>
+                                <span class="divider"></span>
+                                <p>Fender detailing involves cleaning the inner parts of a fender area of the vehicle.</p>
+                            </div>
+                        </div>
+                         <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services car_responsive">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Normal%20Air.png}" alt=""></span>
+                                <h5>Regular air check</h5>
+                                <span class="divider"></span>
+                                <p>Tire pressure is a measure of the amount of air in a vehicle's tires.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services car_responsive">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Nitragen.png}" alt=""></span>
+                                <h5>Nitrogen air check</h5>
+                                <span class="divider"></span>
+                                <p>Get Nitrogen air check service and fill service done at your door step.</p>
+                            </div>
+                        </div>
+                       
+                        
+                        <div class="col-md-2 col-sm-6 new_service">
+                            <div class="single-service car_services responsive_data">
+                                <span class="added_services"><img th:src="@{/assets/images/cc_images/doorstep/Fuel.png}" alt=""></span>
+                                <h5>Fuel Service</h5>
+                                <span class="divider"></span>
+                                <p>Fuel Service. We partnered with companies who provide door step fuel drop service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service Three Area End -->
+        
+        
+         <!-- About Light Area Start -->
+        <div class="about-light-area pt-75 pb-70" id="about">
+            <div class="container">
+                <div class="section-title-light pb-40">
+                    <h2 class="upcoming_serv" style="text-align:center;">Who we are </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 about_responsive">
+                        <div class="about-image">
+                            <img th:src="@{/assets/images/bg/about_img.jpg}">
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 resposive_title">
+                        <div class="about-title">
+                           
+                            <h2>We started with a simple idea</h2>
+                            
+                        </div>
+                        <div class="about-text">
+                            <p class="demo_about">CleanseCar is the simplest and most reliable car care solution to keep your car clean at your doorstep every day. CleanseCar is an end to end car cleansing solution which ensures the wash experience for your car as a memorable one with no compromise in quality at the lowest price. We offer daily car wash services, on demand services related to car care. 
+                            <p>CleanseCar promises a guarenteed and reliable daily car wash. For the first time in the history of car wash cleanse car provides Rs. 10,000 scratch and scar insurance in the daily car wash industry. We are fully operational in bangalore and chennai. We are expected to start our services in Mumbai, Pune, Hyderabad and Gurgaon in 2019. </p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Light Area End -->
+        
+        
+        
+        
+        <!-- Contact Three Area Start -->
+        <div class="contact-three-area bg-4 pt-30 pb-90 maps_in" >
+            <div class="container">
+                <div class="section-title pb-10 text-center fix">
+                  
+                    <h2>Cities we are available</h2>
+                    
+                </div>
+                <div class="row">
+                
+			<section>
+				<div class="tabs tabs-style-flip">
+					<nav>
+						<ul class="maps_cc">
+							<li class="maps_list">
+                                <div class="location_icon">
+                                    <span class="loc_icon"><img th:src="@{/assets/images/State_icon/Bangalore.jpg}"></span>
+                                </div>
+                                <a href="#section-flip-5" class="icon map_color">
+                                    <span>Bangalore</span>
+                                    <small class="live_gif">
+                                        <img th:src="@{/assets/images/bg/giphy.gif}">Live</small>
+
+                                 </a></li>
+							<li class="maps_list">
+                                <div class="location_icon">
+                                    <span class="loc_icon"><img th:src="@{/assets/images/State_icon/Chennai.jpg}"></span>
+                                        </div>
+                                <a href="#section-flip-4" class="icon map_color ">
+                                    <span>Chennai</span><small class="live_gif"><img th:src="@{/assets/images/bg/giphy.gif}">Live</small>
+                                </a></li>
+                            <li class="maps_list">
+                                <div class="location_icon">
+                                    <span class="loc_icon"><img th:src="@{/assets/images/State_icon/Hyderabad.jpg}"></span>
+                                        </div>
+                                <a href="#section-flip-4" class="icon map_color ">
+                                    <span>Hyderabad</span><small class="live_gif">
+                                    <img th:src="@{/assets/images/bg/giphy.gif}">Live</small></a></li>
+                            <li class="maps_list">
+                                <div class="location_icon">
+                                    <span class="loc_icon"><img th:src="@{/assets/images/State_icon/Mumbai.jpg}"></span>
+                                        </div>
+                                <a href="#section-flip-4" class="icon map_color ">
+                                    <span>Mumbai</span><small class="live_gif">
+                                    <img th:src="@{/assets/images/bg/giphy.gif}">Live</small></a></li>
+							
+							<li class="map_inactive"><img th:src="@{/assets/images/State_icon/Pune.jpg}">
+                                <a href="#section-flip-3" class="icon map_inactive map_color"> 
+                                    
+                                    <span>Pune</span><small class="coming_up">Coming Soon</small></a>
+                            </li>
+							
+                            <li class="map_inactive"><img th:src="@{/assets/images/State_icon/gure.jpg}">
+                                <a href="#section-flip-6" class="icon map_inactive map_color">
+                                    
+                                    <span>Gurugram</span><small class="coming_up">Coming Soon</small></a>
+                            </li>
+                            <li><img th:src="@{/assets/images/State_icon/%20Noida.jpg}">
+                                <a href="#section-flip-7" class="icon map_inactive map_color"> 
+                                   
+                                    <span>Noida</span> <small class="coming_up">Coming Soon</small></a>
+                            </li>
+                            <li class="map_inactive" ><img th:src="@{/assets/images/State_icon/Delhi.jpg}">
+                                <a href="#section-flip-8" class="icon map_inactive map_color"> 
+                                    
+                                    <span>Delhi/NCR</span><small class="coming_up">Coming Soon</small></a>
+                            </li>
+                            <li class="map_inactive"><img th:src="@{/assets/images/State_icon/Kolkata.jpg}">
+                                <a href="#section-flip-9" class="icon map_inactive map_color"> 
+                                    
+                                    <span>Kolkata</span><small class="coming_up">Coming Soon</small></a>
+                            </li>
+						</ul>
+					</nav>
+                    <!--
+					<div class="content-wrap maps_flips">
+						<section id="section-flip-1"><div id="googleMap" style="width:100%;height:400px;"></div></section>
+						<section id="section-flip-2"><img src="img/cc_images/chennai.png"></section>
+						
+					</div>
+--><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+            
+            
+                
+                
+                
+                </div>
+                
+          
+            </div>
+        </div>
+        <!-- Contact Three Area End -->
+        
+     
+        <!-- Footer Area Start -->
+        <footer class="footer-area bg-5" id="footer_down">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6 col-xs-12 foo_width">
+                            <div class="single-footer-widget">
+                                <div class="footer-logo cc_footer">
+                                    <a href="index.html"><img th:src="@{/assets/images/cc_images/Web%20Logo_%20178x70.png}" alt=""></a>
+                                    <div class="about_footer">
+                                <h3>About Us</h3>
+                                    <p>CleanseCar is the simplest and most reliable car care solution to keep your car clean at your doorstep every day. CleanseCar is an end to end car cleansing solution which ensures the wash experience for your car as a memorable one with no compromise in quality at the lowest price.</p>
+                                
+                                </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-md-5 col-sm-6 col-xs-12 help_info">
+                            <div class="single-footer-widget">
+                              
+                                <div class="footer-info-wrapper" style="padding-top:0px!important;">
+                                    <div class="conditions-info">
+                                    <ul class="terms_info">
+                                        <li><a href="http://cleansecar.com/m_view/m_terms_conditions.html">Terms & Conditions</a></li>
+                                        <li class="footer_info" style="display:none;"><a href="#">Support</a></li>
+                                        <li class="footer_info" style="display:none;"><a href="#">Help & FAQ</a></li>
+                                        <li class="footer_info"><a href="http://cleansecar.com/m_view/m_privacy_policy.html">Privacy Policy</a></li>
+                                        
+                                        </ul>
+                                    
+                                    </div>
+                                    <div class="f-info">
+                                        <span class="icon icon-Phone"></span>
+                                        <span class="f-info-text"> +(91) 73380 73380</span>
+                                    </div>
+                                    <div class="f-info">
+                                        <span class="icon icon-Mail"></span>
+                                        <span class="f-info-text"> customercare@cleansecar.com</span>
+                                    </div>
+                                    
+                                     <div class="col-lg-6 col-md-5 col-sm-4" style="padding:0px;">
+                            <div class="payment-img">
+                                <a href="https://www.facebook.com/CleansecarHQ/?modal=admin_todo_tour" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/CleanseCar"><i class="fa fa-twitter social_icons" target="_blank"></i></a>
+                                <a href="linkedin.com/company/cleansecar" target="_blank"><i class="fa fa-linkedin social_icons"></i></a>
+
+                            </div>
+                        </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-border"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-sm-8">
+                            <div class="footer-links-copyright">
+                                <span>Copyright &copy; 2019 <a href="http://cleansecar.com/">CleanseCar</a>. All Right Reserved.</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+       <!-- <a href="#" data-target="right-slide-out" class="settings_demo sidenav-trigger right-side-toggle btn-floating btn-large waves-effect waves-light">
+--><button class="open-button " onclick="openForm()"> <div class="panel-heading collapsed demo_open" data-toggle="collapse" data-target="#bar">
+    
+    For Demo Call Us @ 73380 73380 <i class="fa fa-angle-double-up"></i>
+  </div>
+  </button>
+           
+           <div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+      
+     <div class="car_demo">
+                                <p>Schedule Demo</p>
+                            <span>Do you have minimum <b>25</b> Cars in your apartment?</span>
+                            <small>Are you looking for professional daily car care services?</small>
+                           
+                            </div>
+    
+    <button type="button" class="btn cancel cancel_demo" onclick="closeForm()" style="background-color:#383097">Call Us @ 73380 73380 <i class="fa fa-angle-double-down"></i></i></button>
+  </form>
+</div>
+
+           <!--
+           <div class="car_demo">
+                                <p>Schedule Demo</p>
+                            <span>Do you have minimum <b>25</b> Cars in your apartment?</span>
+                            <small>Are you looking for professional daily car care services?</small>
+                            <label>Call Us @ 73380 73380</label>
+                            </div></a>
+-->
+		<!-- All js here -->
+        <script th:src="@{/assets/js/vendor/jquery-1.12.4.min.js}"></script>
+        <script th:src="@{/assets/js/bootstrap.min.js}"></script>
+        <script th:src="@{/assets/js/owl.carousel.min.js}"></script>
+        <script th:src="@{/assets/js/jquery.meanmenu.js}"></script>
+        <script th:src="@{/assets/js/slick.min.js}"></script>
+        <script th:src="@{/assets/js/isotope.pkgd.min.js}"></script>
+        <script th:src="@{/assets/js/imagesloaded.pkgd.min.js}"></script>
+        <script th:src="@{/assets/js/ajax-mail.js}"></script>
+        <script th:src="@{/assets/js/plugins.js}"></script>
+        <script th:src="@{/assets/js/main.js}"></script>
+       
+    </body>
+
+   
+        
+        
+        <script>
+        
+        
+        $(document).ready(function() {
+
+  //window and animation items
+  var animation_elements = $.find('.animation-element');
+  var web_window = $(window);
+
+  //check to see if any animation containers are currently in view
+  function check_if_in_view() {
+    //get current window information
+    var window_height = web_window.height();
+    var window_top_position = web_window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
+
+      //get the element sinformation
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top_position = $(element).offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+        element.addClass('in-view');
+      } else {
+        element.removeClass('in-view');
+      }
+    });
+
+  }
+
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
+
+});
+        
+        </script>
+         <script src="js/cbpFWTabs.js"></script>
+    
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        
+   <script>
+    
+    var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 3000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 150 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 200;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+    
+    
+    </script>
+    <script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(12.989890, -77.576013),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+    
+   
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+    
+    
+    </script>
+    
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNHlpFr7_CXWD3YsR9uTRnv1GJhOTHLPU&callback=myMap" type="text/javascript"></script>
+    
+    
+    <!-- Download Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+         <div class="modal-content" >
+        <div class="modal-header app_modal" >
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body mob_body">
+          <div class="mob_num">
+              <div class="modal_content"><p>Thank You! Enter your mobile number and download our Free App and we will be with you all the way! </p>
+              
+              <ul class="spl_points">
+                  
+                  <li><img th:src="@{/assets/images/bg/tick.png}"></i>Download the app and Sign Up with your phone number</li>
+                  <li><img th:src="@{/assets/images/bg/tick.png}">Make and manage bookings -  anytime, anywhere</li>
+                  <li><img th:src="@{/assets/images/bg/tick.png}">Read our hints & tips for a happy car experience every time</li>
+                  <li><img th:src="@{/assets/images/bg/tick.png}">Book any auto service, get it delivered at Doorstep</li>
+                  
+                  </ul>
+                  <div class="enter_num">
+                  
+                   
+              <span>we will send you a link to download our app to your Android/iOS device</span> 
+                      <div class="submit_num">
+                      <input type="text" placeholder="Enter Phone Number"><button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
+                      <small class="no_thanks">No Thanks</small></div>
+                  </div>
+                  </div>
+              <div class="modal_img">
+              <div class="modal_logo">
+                  <img th:src="@{/assets/images/cc_images/Full%20White_C%20Logo.png}">
+                  </div>
+             <div class="modal_cc">
+              <img th:src="@{/assets/images/bg/mob_image.png}">
+                 </div>
+              
+              </div>
+              
+              </div>
+              
+             
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</html>
